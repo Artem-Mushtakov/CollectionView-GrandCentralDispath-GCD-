@@ -14,9 +14,7 @@ protocol Builder {
 class ModuleBuilder: Builder {
     static func createStartModule() -> UIViewController {
         let startViewController = StartViewController()
-        let startView = StartView()
         let startPresenter = StartPresenter(view: startViewController)
-        startViewController.view = startView
         startViewController.presenter = startPresenter
         return startViewController
     }
