@@ -14,8 +14,14 @@
 		ACF6185D288D3E3F00DA4C83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF6185B288D3E3F00DA4C83 /* LaunchScreen.storyboard */; };
 		ACF6186A288D407700DA4C83 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF61869288D407700DA4C83 /* ModuleBuilder.swift */; };
 		ACF6186C288D40C700DA4C83 /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6186B288D40C700DA4C83 /* StartPresenter.swift */; };
-		ACF6186E288D40DC00DA4C83 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6186D288D40DC00DA4C83 /* StartView.swift */; };
 		ACF61872288D4C8700DA4C83 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF61871288D4C8700DA4C83 /* Model.swift */; };
+		ACF61874288D504300DA4C83 /* CellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF61873288D504300DA4C83 /* CellImage.swift */; };
+		ACF61876288D504B00DA4C83 /* CellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF61875288D504B00DA4C83 /* CellText.swift */; };
+		ACF6187B288D71D200DA4C83 /* HeaderCellFemale.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6187A288D71D200DA4C83 /* HeaderCellFemale.swift */; };
+		ACF6187D288F121B00DA4C83 /* HeaderCellMale.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6187C288F121B00DA4C83 /* HeaderCellMale.swift */; };
+		ACF6187F288F123900DA4C83 /* HeaderCellUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6187E288F123900DA4C83 /* HeaderCellUnknown.swift */; };
+		ACF6188A2893206000DA4C83 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF618892893206000DA4C83 /* UIImageView+Extension.swift */; };
+		ACF6188C2893206C00DA4C83 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6188B2893206C00DA4C83 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +34,14 @@
 		ACF6185E288D3E3F00DA4C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACF61869288D407700DA4C83 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		ACF6186B288D40C700DA4C83 /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
-		ACF6186D288D40DC00DA4C83 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		ACF61871288D4C8700DA4C83 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ACF61873288D504300DA4C83 /* CellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellImage.swift; sourceTree = "<group>"; };
+		ACF61875288D504B00DA4C83 /* CellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellText.swift; sourceTree = "<group>"; };
+		ACF6187A288D71D200DA4C83 /* HeaderCellFemale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellFemale.swift; sourceTree = "<group>"; };
+		ACF6187C288F121B00DA4C83 /* HeaderCellMale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellMale.swift; sourceTree = "<group>"; };
+		ACF6187E288F123900DA4C83 /* HeaderCellUnknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellUnknown.swift; sourceTree = "<group>"; };
+		ACF618892893206000DA4C83 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		ACF6188B2893206C00DA4C83 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,7 @@
 		ACF61864288D3E4400DA4C83 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				ACF618882893204B00DA4C83 /* Extensions */,
 				ACF61866288D3E6900DA4C83 /* App */,
 				ACF61867288D3E6E00DA4C83 /* Modules */,
 			);
@@ -101,11 +114,32 @@
 			isa = PBXGroup;
 			children = (
 				ACF61854288D3E3F00DA4C83 /* StartViewController.swift */,
-				ACF6186D288D40DC00DA4C83 /* StartView.swift */,
+				ACF61877288D504D00DA4C83 /* Cell */,
 				ACF6186B288D40C700DA4C83 /* StartPresenter.swift */,
 				ACF61871288D4C8700DA4C83 /* Model.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		ACF61877288D504D00DA4C83 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACF61873288D504300DA4C83 /* CellImage.swift */,
+				ACF61875288D504B00DA4C83 /* CellText.swift */,
+				ACF6187A288D71D200DA4C83 /* HeaderCellFemale.swift */,
+				ACF6187C288F121B00DA4C83 /* HeaderCellMale.swift */,
+				ACF6187E288F123900DA4C83 /* HeaderCellUnknown.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ACF618882893204B00DA4C83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACF618892893206000DA4C83 /* UIImageView+Extension.swift */,
+				ACF6188B2893206C00DA4C83 /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,12 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF6188C2893206C00DA4C83 /* UIImage+Extension.swift in Sources */,
+				ACF6187D288F121B00DA4C83 /* HeaderCellMale.swift in Sources */,
+				ACF6187F288F123900DA4C83 /* HeaderCellUnknown.swift in Sources */,
+				ACF6187B288D71D200DA4C83 /* HeaderCellFemale.swift in Sources */,
 				ACF61872288D4C8700DA4C83 /* Model.swift in Sources */,
 				ACF61855288D3E3F00DA4C83 /* StartViewController.swift in Sources */,
 				ACF61851288D3E3F00DA4C83 /* AppDelegate.swift in Sources */,
+				ACF6188A2893206000DA4C83 /* UIImageView+Extension.swift in Sources */,
 				ACF61853288D3E3F00DA4C83 /* SceneDelegate.swift in Sources */,
-				ACF6186E288D40DC00DA4C83 /* StartView.swift in Sources */,
+				ACF61874288D504300DA4C83 /* CellImage.swift in Sources */,
 				ACF6186A288D407700DA4C83 /* ModuleBuilder.swift in Sources */,
+				ACF61876288D504B00DA4C83 /* CellText.swift in Sources */,
 				ACF6186C288D40C700DA4C83 /* StartPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

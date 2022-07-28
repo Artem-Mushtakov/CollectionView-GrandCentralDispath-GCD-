@@ -7,13 +7,15 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - RickandmortyModel
+
 struct RickandmortyModel: Codable {
     let info: Info?
     let results: [Result]?
 }
 
 // MARK: - Info
+
 struct Info: Codable {
     let count, pages: Int?
     let next: String?
@@ -21,6 +23,7 @@ struct Info: Codable {
 }
 
 // MARK: - Result
+
 struct Result: Codable {
     let id: Int?
     let name: String?
@@ -42,6 +45,7 @@ enum Gender: String, Codable {
 }
 
 // MARK: - Location
+
 struct Location: Codable {
     let name: String?
     let url: String?
