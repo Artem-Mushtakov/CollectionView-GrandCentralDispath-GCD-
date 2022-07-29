@@ -22,7 +22,7 @@ final class CellText: UICollectionViewCell {
 
     // MARK: - Properties
 
-    lazy var titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 17)
         label.textColor = .black
@@ -42,6 +42,7 @@ final class CellText: UICollectionViewCell {
     private func setupHierarchy() {
         self.contentView.addSubview(titleLabel)
     }
+
     private func setupConstraints() {
 
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -52,5 +53,11 @@ final class CellText: UICollectionViewCell {
             titleLabel.widthAnchor.constraint(equalToConstant: self.contentView.frame.width - 30),
             titleLabel.heightAnchor.constraint(equalToConstant: self.contentView.frame.height - 30)
         ])
+    }
+
+    // MARK: - Func load data
+
+    func loadData(text: String) {
+        titleLabel.text = text
     }
 }

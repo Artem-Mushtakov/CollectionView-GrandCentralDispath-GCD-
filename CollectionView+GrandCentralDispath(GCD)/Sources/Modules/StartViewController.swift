@@ -99,11 +99,10 @@ extension StartViewController: UICollectionViewDataSource, UICollectionViewDeleg
     private func setupCellImage(collectionView: UICollectionView, model: Result?, indexPath: IndexPath) -> UICollectionViewCell {
         let cellImage = collectionView.dequeueReusableCell(withReuseIdentifier: "CellImage", for: indexPath) as? CellImage
 
-        guard let model = model, let cellImage = cellImage,
-              let urlString = (model.image),
-              let url = URL(string: urlString) else { return UICollectionViewCell() }
+        guard let cellImage = cellImage, let urlString = model?.image else { return UICollectionViewCell() }
 
-        cellImage.titleImage.downloaded(from: url)
+        let url = URL(string: urlString)
+        cellImage.loadImageUrl(url: url)
 
         return cellImage
     }
@@ -113,7 +112,7 @@ extension StartViewController: UICollectionViewDataSource, UICollectionViewDeleg
 
         guard let celltext = celltext, let name = model?.name else { return UICollectionViewCell() }
 
-        celltext.titleLabel.text = name
+        celltext.loadData(text: name)
         return celltext
     }
 }

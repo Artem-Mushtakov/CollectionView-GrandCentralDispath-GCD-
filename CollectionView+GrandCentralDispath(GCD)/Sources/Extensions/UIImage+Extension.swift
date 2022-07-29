@@ -22,6 +22,7 @@ extension UIImage {
 
         guard let outImage = context.createCGImage(outputImage, from: outputImage.extent) else { return UIImage() }
         let returnImage = UIImage(cgImage: outImage)
+
         return returnImage
     }
 }

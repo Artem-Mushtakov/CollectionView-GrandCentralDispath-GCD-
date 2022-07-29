@@ -17,9 +17,6 @@
 		ACF61872288D4C8700DA4C83 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF61871288D4C8700DA4C83 /* Model.swift */; };
 		ACF61874288D504300DA4C83 /* CellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF61873288D504300DA4C83 /* CellImage.swift */; };
 		ACF61876288D504B00DA4C83 /* CellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF61875288D504B00DA4C83 /* CellText.swift */; };
-		ACF6187B288D71D200DA4C83 /* HeaderCellFemale.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6187A288D71D200DA4C83 /* HeaderCellFemale.swift */; };
-		ACF6187D288F121B00DA4C83 /* HeaderCellMale.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6187C288F121B00DA4C83 /* HeaderCellMale.swift */; };
-		ACF6187F288F123900DA4C83 /* HeaderCellUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6187E288F123900DA4C83 /* HeaderCellUnknown.swift */; };
 		ACF6188A2893206000DA4C83 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF618892893206000DA4C83 /* UIImageView+Extension.swift */; };
 		ACF6188C2893206C00DA4C83 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6188B2893206C00DA4C83 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -37,9 +34,6 @@
 		ACF61871288D4C8700DA4C83 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ACF61873288D504300DA4C83 /* CellImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellImage.swift; sourceTree = "<group>"; };
 		ACF61875288D504B00DA4C83 /* CellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellText.swift; sourceTree = "<group>"; };
-		ACF6187A288D71D200DA4C83 /* HeaderCellFemale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellFemale.swift; sourceTree = "<group>"; };
-		ACF6187C288F121B00DA4C83 /* HeaderCellMale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellMale.swift; sourceTree = "<group>"; };
-		ACF6187E288F123900DA4C83 /* HeaderCellUnknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellUnknown.swift; sourceTree = "<group>"; };
 		ACF618892893206000DA4C83 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		ACF6188B2893206C00DA4C83 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,9 +120,6 @@
 			children = (
 				ACF61873288D504300DA4C83 /* CellImage.swift */,
 				ACF61875288D504B00DA4C83 /* CellText.swift */,
-				ACF6187A288D71D200DA4C83 /* HeaderCellFemale.swift */,
-				ACF6187C288F121B00DA4C83 /* HeaderCellMale.swift */,
-				ACF6187E288F123900DA4C83 /* HeaderCellUnknown.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -213,9 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF6188C2893206C00DA4C83 /* UIImage+Extension.swift in Sources */,
-				ACF6187D288F121B00DA4C83 /* HeaderCellMale.swift in Sources */,
-				ACF6187F288F123900DA4C83 /* HeaderCellUnknown.swift in Sources */,
-				ACF6187B288D71D200DA4C83 /* HeaderCellFemale.swift in Sources */,
 				ACF61872288D4C8700DA4C83 /* Model.swift in Sources */,
 				ACF61855288D3E3F00DA4C83 /* StartViewController.swift in Sources */,
 				ACF61851288D3E3F00DA4C83 /* AppDelegate.swift in Sources */,
